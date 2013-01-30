@@ -36,4 +36,7 @@ Photo::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  AWS_ACCESS_KEY_ID="access key"
+  AWS_SECRET_ACCESS_KEY="secret"
+
 end
