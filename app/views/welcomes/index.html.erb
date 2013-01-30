@@ -1,0 +1,7 @@
+
+<% s3 = AWS::S3.new %>
+<% bucket = s3.buckets['my_rails_photo_store'].objects.collect(&:key) %>
+<% bucket.each do |buc|  %>
+  <%= image_tag("http://my_rails_photo_store.s3.amazonaws.com/#{buc}") %>
+<% end %>
+
